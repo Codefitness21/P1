@@ -273,21 +273,13 @@ p {
   display: none;
 }
 
-/*.jt-view {
+.jt-view {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 5rem;
   margin-bottom: 10rem;
 }
-
-.jt-tablet-btn {
-  color: #ffffff;
-  background-color: $secondary-color;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px 25px 10px 25px;
-}*/
 
 .view {
   display: flex;
@@ -630,6 +622,7 @@ footer {
   /** Footer **/
   .right-brick>img {
     width: 25%;
+    margin-top: -25rem;
   }
 }
 

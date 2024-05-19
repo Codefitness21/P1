@@ -10,7 +10,7 @@ function goRight() {
             var slide = document.getElementById("slide")
 
 
-            btn[0].onclick = function goRight() {
+            /*btn[0].onclick = function goRight() {
                 document.querySelector(".carousel-container").scrollLeft -= 640;
                 for (i = 0; i < 0; i++) {
                     btn[i].classList.remove("active");
@@ -45,7 +45,7 @@ function goRight() {
                 }
                 this.classList.add("active");
             }
-            /*btn[3].onclick = function goLeft() {
+            btn[3].onclick = function goLeft() {
                 document.querySelector(".carousel-container").scrollLeft += 640;
                 for (i = 0; i < 4; i++) {
                     btn[i].classList.remove("active");

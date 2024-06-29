@@ -76,10 +76,10 @@ a {
 
 .nav-bar .left-upper-corner-brick {
   position: absolute;
-  top: -10rem;
-  bottom: 20rem;
-  left: -20rem;
-  right: 0;
+  top: -18rem;
+
+  left: -30rem;
+
   width: 35%;
 }
 
@@ -336,7 +336,7 @@ h4 {
   align-self: center;
   scroll-snap-type: x proximity;
   scroll-behavior: smooth;
-  width: 2500px;
+  width: 1500px;
   margin-bottom: 5rem;
   overflow-x: scroll;
 }
@@ -530,7 +530,7 @@ footer {
 
 /** MEDIA QUERIES **/
 /** Tablet Landscape **/
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1552px) {
 
   /** Nav **/
   .nav-bar {
@@ -540,8 +540,10 @@ footer {
   }
 
   .nav-bar .left-upper-corner-brick {
-    top: -8rem;
-    width: 40%;
+    position: absolute;
+    top: -10rem;
+    left: -18rem;
+    width: 35%;
   }
 
   .nav-bar>img {
@@ -675,7 +677,7 @@ footer {
   /** Projects **/
   .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 3500px;
+    width: 2800px;
   }
 
   .slide-show>p {
@@ -1228,7 +1230,7 @@ footer {
     background-size: cover;
   }
 
-  .card-lg-img_4 {
+  .card-lg-img_5 {
     display: flex;
     flex-direction: column;
     justify-content: center;

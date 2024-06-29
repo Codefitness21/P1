@@ -699,10 +699,16 @@ footer {
 
 /** Tablet Landscape **/
 @media screen and (max-width: 1366px) {
+  .nav-bar .left-upper-corner-brick {
+    position: absolute;
+    top: -7rem;
+    left: -18rem;
+    width: 35%;
+  }
    /** Projects **/
    .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 2800px;
+    width: 3500px;
   }
 }
 

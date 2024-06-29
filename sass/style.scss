@@ -697,6 +697,15 @@ footer {
   }
 }
 
+/** Tablet Landscape **/
+@media screen and (max-width: 1366px) {
+   /** Projects **/
+   .carousel-container {
+    scroll-snap-type: x mandatory;
+    width: 2800px;
+  }
+}
+
 /**Tablet Pro Portrait**/
 @media screen and (max-width: 1024px) {
 

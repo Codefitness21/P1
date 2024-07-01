@@ -692,7 +692,7 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     width: 20vw;
-    height: 100vh;
+    height: auto;
     margin-top: -79rem;
     opacity: 0;
     transition: .5s ease;
@@ -703,7 +703,7 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     width: 20vw;
-    height: 105vh;
+    height: auto;
   }
 
   /** About Me **/

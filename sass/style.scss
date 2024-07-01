@@ -683,7 +683,12 @@ footer {
   }
 
   .kelly-face-img {
+    width: 20vw;
     margin-top: 5rem;
+  }
+
+  .kelly-face-img>img {
+    width: 95%;
   }
 
   .kelly-graffiti-name>img {

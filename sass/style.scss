@@ -731,6 +731,17 @@ footer {
     left: -18rem;
     width: 35%;
   }
+
+  .kelly-face-img .face-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20vw;
+    width: 100%;
+    margin-top: -65rem;
+    opacity: 0;
+    transition: .5s ease;
+  }
   
    /** Projects **/
    .carousel-container {

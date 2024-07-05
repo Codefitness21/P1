@@ -550,15 +550,42 @@ footer {
 }
 
 /** MEDIA QUERIES **/
-/** Tablet Laptop **/
+/** Laptop **/
 @media screen and (max-width: 1552px) {
 
   /** Nav **/
-  .nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin: auto;
+  z-index: 1;
+  width: 100%;
+  background-color: $primary-color;
+  padding: 2rem;
+}
+
+.nav-items {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  font-size: 30px;
+  width: 30rem;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-items a:hover {
+  color: #ffd700;
+}
+
 
   .nav-bar .left-upper-corner-brick {
     position: absolute;
@@ -578,10 +605,8 @@ footer {
   }
 
   /** Menu **/
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  /*.hamburger {
+    display: none;
   }
 
   .bar {
@@ -654,7 +679,7 @@ footer {
     text-align: center;
     font-size: 25px;
     color: #ffd700;
-  }
+  }*/
 
   .dropdown .dropbtn {
     font-size: 40px;

@@ -271,7 +271,7 @@ p {
   opacity: 0.9;
 }
 
-.layer .test {
+.layer .small-card-text {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -290,13 +290,50 @@ p {
   padding: 10px;
 }
 
-.test {
+.small-card-text {
   text-align: center; /* Center align the text */
   font-weight: 500;
   color: black;
   transition: opacity 0.5s ease; /* Smooth transition for opacity */
 }
 
+.layer .medium-card-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 15px;
+  bottom: 0%;
+  top: 0%;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  transition: 0.5s;
+  padding: 10px;
+}
+
+.layer .large-card-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+  bottom: 0%;
+  top: 0%;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  transition: 0.5s;
+  padding: 10px;
+}
 
 /*** FOOTER ***/
 footer {
@@ -326,8 +363,16 @@ footer {
 /** MEDIA QUERIES **/
 /** Laptop **/
 @media screen and (max-width: 1552px) {
-  .layer .test {
-    font-size: 10px;
+  .layer .small-card-text {
+    font-size: 13px;
+  }
+
+  .layer .medium-card-text {
+    font-size: 15px;
+  }
+
+  .layer .large-card-text {
+    font-size: 20px;
   }
 }
 
@@ -466,7 +511,15 @@ footer {
     padding: 15px;
   }
 
-  .layer .test {
+  .layer .small-card-text {
+    font-size: 10px;
+  }
+
+  .layer .medium-card-text{
+    font-size: 10px;
+  }
+
+  .layer .large-card-text {
     font-size: 10px;
   }
 
@@ -831,7 +884,15 @@ footer {
     padding: 15px;
   }
 
-  .layer .test {
+  .layer .small-card-text {
+    font-size: 8px;
+  }
+
+  .layer .medium-card-text{
+    font-size: 8px;
+  }
+
+  .layer .medium-card-text{
     font-size: 8px;
   }
 

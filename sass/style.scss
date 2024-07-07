@@ -800,8 +800,35 @@ a {
     width: 35%;
   }
 
- 
+  .kelly-graffiti-name>img {
+    margin-top: 6rem;
+  }
+
+  .kelly-face-img {
+    position: relative; /* Container needs relative positioning for absolute positioning of overlay */
+    width: 100%; /* Adjust width as needed */
+    max-width: 20vw; /* Adjust maximum width as needed */
+    margin-top: 5rem;
+  }
   
+  .kelly-face-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .face-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .kelly-face-img:hover .face-overlay {
+    opacity: 1;
+  }
+ 
    /** Projects **/
    .carousel-container {
     scroll-snap-type: x mandatory;

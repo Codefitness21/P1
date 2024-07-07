@@ -169,6 +169,7 @@ h1 {
   font-size: 50px;
   font-weight: bold;
   text-indent: 5rem;
+  margin-top: 2rem;
 }
 
 @keyframes typing {
@@ -194,7 +195,7 @@ h2 {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 h4 {
@@ -207,19 +208,18 @@ h4 {
   position: relative; /* Container needs relative positioning for absolute positioning of overlay */
   width: 100%; /* Adjust width as needed */
   max-width: 20vw; /* Adjust maximum width as needed */
-  overflow: hidden; /* Ensures overlay does not exceed container */
 }
 
 .kelly-face-img img {
-  display: block;
   width: 100%;
   height: auto;
 }
 
 .face-overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  bottom: 0;
+  height: auto;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -734,40 +734,34 @@ a {
     font-size: 35px;
   }
 
-  .kelly-face-img {
-    width: 20vw;
-    margin-top: 5rem;
-  }
-
-  .kelly-face-img>img {
-    width: 95%;
-  }
-
+ 
   .kelly-graffiti-name>img {
     margin-top: 6rem;
   }
 
-  .kelly-face-img .face-overlay{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 20vw;
-    height: auto;
-    margin-top: -75rem;
-    opacity: 0;
-    transition: .5s ease;
+  .kelly-face-img {
+    position: relative; /* Container needs relative positioning for absolute positioning of overlay */
+    width: 100%; /* Adjust width as needed */
+    max-width: 20vw; /* Adjust maximum width as needed */
+    margin-top: 5rem;
   }
-
-  .kelly-face-img>img {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 20vw;
-    height: auto;
-  }
-
-  .kelly-face-img .face-overlay img {
+  
+  .kelly-face-img img {
     width: 100%;
+    height: auto;
+  }
+  
+  .face-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .kelly-face-img:hover .face-overlay {
+    opacity: 1;
   }
 
   /** About Me **/

@@ -1373,6 +1373,19 @@ a {
     background-size: cover;
   }
 
+  .card-lg-img_6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 250px;
+    max-height: 200px;
+    width: 100%;
+    color: #fff;
+    background: url(../img/Extrahands_Stub.png);
+    background-color: #000000;
+    background-size: cover;
+  }
+
   .card-lg-content {
     display: flex;
     flex-direction: column;
@@ -1725,6 +1738,19 @@ h1{
     width: 100%;
     color: #fff;
     background: url(../img/UI_stub.png);
+    background-color: #000000;
+    background-size: cover;
+  }
+
+  .card-lg-img_6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 250px;
+    max-height: 200px;
+    width: 100%;
+    color: #fff;
+    background: url(../img/Extrahands_Stub.png);
     background-color: #000000;
     background-size: cover;
   }

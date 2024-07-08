@@ -1564,7 +1564,7 @@ h1{
 }
   
   .kelly-graffiti-name h2 {
-    animation: typing 0;
+    animation: typing 2s steps(51, end), blink-caret 12s step-end infinite alternate;
     overflow: hidden;
     white-space: wrap;
   }

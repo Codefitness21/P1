@@ -613,18 +613,24 @@ footer {
 
   /** Header **/
   h1 {
-    margin-top: 15rem;
+    margin-top: 0rem;
   }
 
   /** Main Row **/
-  .wireframe-container-carousel .case-study{
+  .wireframe-container-carousel {
     display: flex;
-    overflow-x: scroll;
+    justify-content: flex-start;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    
+    -webkit-overflow-scrolling: touch;
     margin-top: 2rem;
     padding: 1rem;
+}
+
+.carousel-wrapper {
+    display: flex;
+    flex-direction: row;
 }
 
   video {
@@ -632,7 +638,7 @@ footer {
   }
 
   .title {
-    margin-top: 5rem;
+    margin-top: 15rem;
   }
 
   .main-row>img {
@@ -850,7 +856,7 @@ footer {
 
   h1 {
     font-size: 50px;
-    margin-top: 20rem;
+    margin-top: -10rem;
   }
 
   h2 {
@@ -862,6 +868,10 @@ footer {
     margin: 0;
     margin-top: 2rem;
     margin-bottom: 5rem;
+  }
+
+  video {
+    width: 111px;
   }
 
   /* top row */

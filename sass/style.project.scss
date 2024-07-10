@@ -230,6 +230,24 @@ p {
   width: 40vw;
 }
 
+.wireframe-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wireframe img {
+  width: 100%;
+}
+
+.wireframe-title h1{
+  margin-top: 18rem;
+}
+
+video {
+  width: 250px;
+}
+
 /*** TOP ROW ***/
 .top-row {
   display: flex;
@@ -322,6 +340,15 @@ footer {
 }
 
 /** MEDIA QUERIES **/
+
+/** MEDIA QUERIES **/
+/** Laptop **/
+@media screen and (max-width: 1552px) { 
+  video {
+    width: 187px;
+  }
+}
+
 /** Tablet Landscape **/
 @media screen and (max-width: 1366px) {
   .nav-bar {
@@ -590,6 +617,20 @@ footer {
   }
 
   /** Main Row **/
+  .wireframe-container-carousel .case-study{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+  video {
+    width: 245px;
+  }
+
   .title {
     margin-top: 5rem;
   }

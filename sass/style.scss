@@ -1,12 +1,10 @@
-@import 'config';
-@import 'utilities';
+@import "config";
+@import "utilities";
 
 /*** GLOBAL STYLES ***/
 
 html,
-
 body {
-  background: url(../img/Brickwall_bkgd.png);
   width: 100vw;
   height: 100vh;
   font-size: 62.5%;
@@ -46,50 +44,60 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   position: fixed;
-  margin: auto;
   z-index: 1;
   width: 100%;
   background-color: $primary-color;
-  padding: 2rem;
+  padding: 15px;
 }
 
 .nav-items {
   display: inline-flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
   font-size: 30px;
-  width: 30rem;
   text-decoration: none;
-  text-align: center;
   color: #fff;
+  width: 300px;
   cursor: pointer;
+}
+
+.nav-items .resume {
+  color: #000000;
+  background-color: #ffd700;
+  text-align: center;
+  padding: 10px;
+  width: 15%;
+  border-radius: 5px;
 }
 
 .nav-items a:hover {
   color: #ffd700;
 }
 
-.nav-bar .left-upper-corner-brick {
-  position: absolute;
-  top: -18rem;
-
-  left: -30rem;
-
-  width: 35%;
+.nav-items .resume:hover {
+  color: #000000;
 }
 
-.nav-bar>img {
+// .nav-bar .left-upper-corner-brick {
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: flex-end;
+//   // // position: fixed;
+//   // // top: -12rem;
+//   // // left: -20rem;
+//   // width: 35%;
+// }
+
+.nav-bar img {
   position: absolute;
-  top: 0rem;
-  bottom: 20rem;
-  left: 2rem;
-  right: 0;
-  width: 5%;
+  left: 20px;
+  top: 5px;
+  width: 6%;
 }
 
 @keyframes turn-icon-animation {
@@ -106,13 +114,6 @@ a {
 
 .blue-drip {
   animation: 0.6s ease-in-out turn-icon-animation;
-}
-
-.overlay-house-icon>a>img {
-  position: absolute;
-  width: 3%;
-  left: 3.6rem;
-  margin-top: -2rem;
 }
 
 .hamburger {
@@ -132,57 +133,59 @@ a {
 }
 
 /*** HERO ***/
-
 .hero {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.kelly-graffiti-name {
+.left-content-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  width: 80vw;
-  margin-top: 12rem;
-}
-
-.kelly-graffiti-name .hero-brick {
-  position: absolute;
-  width: 75%;
-}
-
-.kelly-graffiti-name>img {
-  position: relative;
+  justify-content: center;
   width: 80%;
 }
 
 .intro {
   display: flex;
-  flex-direction: column;
-  align-self: flex-start;
+  flex-direction: row;
+  justify-content: center;
 }
 
 h1 {
+  margin-top: 130px;
   font-size: 50px;
   font-weight: bold;
-  text-indent: 5rem;
-  margin-top: 2rem;
+  text-indent: 50px;
+}
+
+.kelly-graffiti-name {
+  display: flex;
+  justify-content: center;
+}
+
+.kelly-graffiti-name img {
+  width: 85%;
+}
+
+.job-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @keyframes typing {
   from {
-      width: 0;
-      color: #0000ff;
+    width: 0;
+    color: #0000ff;
   }
 }
 
-.kelly-graffiti-name h2 {
-  animation: typing 2s steps(51, end), blink-caret 12s step-end infinite alternate;
+.job-description h2 {
+  animation: typing 1.5s steps(51, end),
+    blink-caret 12s step-end infinite alternate;
   overflow: hidden;
-  width: 45ch;
+  width: 46ch;
   white-space: nowrap;
 }
 
@@ -195,24 +198,16 @@ h2 {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 5rem;
+  padding: 40px;
 }
 
-h4 {
-  font-size: 25px;
-  margin-bottom: 5rem;
-  text-align: center;
-}
-
-.kelly-face-img {
-  position: relative; /* Container needs relative positioning for absolute positioning of overlay */
-  width: 100%; /* Adjust width as needed */
-  max-width: 20vw; /* Adjust maximum width as needed */
+.right-content-container {
+  width: 20%;
 }
 
 .kelly-face-img img {
+  margin-top: 30px;
   width: 100%;
-  height: auto;
 }
 
 .face-overlay {
@@ -237,15 +232,14 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8rem;
-  /*aligned with .kelly-graffiti-name>h1 just right above in the hero section*/
+  padding: 80px;
 }
 
-.about-me-title>img {
+.about-me-title img {
   width: 50%;
 }
 
-.about-me>p {
+.about-me p {
   font-size: 30px;
   margin-bottom: 2rem;
   background-color: #ffffff;
@@ -261,20 +255,19 @@ h4 {
 .fitness {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 2rem;
-  margin-top: 5rem;
-  /*margin set to this so it's not hidden behind the upper corner left brick*/
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .frontend {
   display: flex;
   justify-content: flex-end;
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 
 .scroll {
   opacity: 0;
-  transition: all 0.5s; 
+  transition: all 0.5s;
   transform: translateX(-100%);
 }
 
@@ -289,9 +282,9 @@ h4 {
   justify-content: flex-start;
 }
 
-.side-left-brick>img {
-  margin-top: -15rem;
-  margin-bottom: -10rem;
+.side-left-brick img {
+  margin-top: -150px;
+  margin-bottom: -100px;
   width: 22%;
 }
 
@@ -307,10 +300,16 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10rem;
+  margin: 100px;
 }
 
-.projects>img {
+h4 {
+  font-size: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.projects img {
   width: 35%;
 }
 
@@ -321,7 +320,7 @@ h4 {
   scroll-snap-type: x proximity;
   scroll-behavior: smooth;
   width: 1720px;
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
   overflow-x: scroll;
 }
 
@@ -347,7 +346,7 @@ h4 {
   border: 3px solid #000000;
 }
 
-.main-slide>img {
+.main-slide img {
   height: 100%;
 }
 
@@ -356,20 +355,20 @@ h4 {
   flex-direction: column;
   align-content: center;
   align-self: flex-start;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.slide-show>h1 {
+.slide-show h1 {
   font-size: 25px;
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
   text-align: center;
   text-indent: 0;
 }
 
-.slide-show>p {
+.slide-show p {
   font-size: 20px;
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
   text-align: justify;
 }
 
@@ -395,7 +394,7 @@ h4 {
   margin: 0;
 }
 
-.right-arrow>img {
+.right-arrow img {
   width: 30%;
   height: 40%;
   cursor: pointer;
@@ -407,7 +406,7 @@ h4 {
   justify-content: center;
 }
 
-.left-arrow>img {
+.left-arrow img {
   width: 30%;
   height: 40%;
   cursor: pointer;
@@ -450,12 +449,12 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10rem;
+  margin: 100px;
 }
 
-.contact>img {
+.contact img {
   width: 35%;
-  margin-top: 5rem;
+  margin-top: 50px;
 }
 
 input {
@@ -470,11 +469,11 @@ input {
   background-color: #fafad2;
 }
 
-input[type=message] {
+input[type="message"] {
   padding: 20px 20px 180px 20px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -484,8 +483,8 @@ input[type=submit] {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /**FOOTER**/
@@ -495,8 +494,8 @@ input[type=submit] {
   justify-content: flex-end;
 }
 
-.right-brick>img {
-  margin-top: -30rem;
+.right-brick img {
+  margin-top: -300px;
   width: 20%;
 }
 
@@ -505,112 +504,83 @@ footer {
   flex-direction: row;
   justify-content: center;
   background-color: $primary-color;
-  width: 100%;
-  padding: 2rem;
+  padding: 20px;
 }
 
-.social-media-icons>a>img {
+.social-media-icons a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-media-icons a img {
   width: 40px;
 }
 
 /** MEDIA QUERIES **/
-/** Laptop **/
-@media screen and (max-width: 1552px) {
-
-  /** Nav **/
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  margin: auto;
-  z-index: 1;
-  width: 100%;
-  background-color: $primary-color;
-  padding: 2rem;
-}
-
-.nav-items {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-a {
-  font-size: 30px;
-  width: 30rem;
-  text-decoration: none;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-}
-
-.nav-items a:hover {
-  color: #ffd700;
-}
-
-
-  .nav-bar .left-upper-corner-brick {
-    position: absolute;
-    top: -10rem;
-    left: -18rem;
-    width: 35%;
+/** Large screens **/
+@media (min-width: 1552px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: $primary-color;
+    padding: 15px;
   }
 
-  .nav-bar>img {
-    width: 7%;
+  .nav-items {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
   }
 
-  .overlay-house-icon>a>img {
-    width: 4%;
-    margin-top: -2rem;
-    margin-left: 0.3rem;
+  a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    width: 300px;
+    cursor: pointer;
+  }
+
+  .nav-items .resume {
+    color: #000000;
+    background-color: #ffd700;
+    text-align: center;
+    padding: 10px;
+    width: 15%;
+    margin-left: 100px;
+    border-radius: 5px;
+  }
+
+  .nav-items a:hover {
+    color: #ffd700;
+  }
+
+  .nav-bar img {
+    width: 6%;
   }
 
   .dropdown .dropbtn {
     font-size: 40px;
-    margin-top: 5rem;
+    margin-top: 50px;
   }
 
-  .dropbtn>i {
+  .dropbtn > i {
     display: none;
   }
 
-  .dropdown .dropdown-content>a {
+  .dropdown .dropdown-content > a {
     display: none;
   }
 
   /** Hero **/
-  .hero {
-    margin-top: 0;
-  }
-
-  h1 {
-    margin-top: 3rem;
-  }
-
   h2 {
-    font-size: 35px;
+    font-size: 55px;
   }
 
- 
-  .kelly-graffiti-name>img {
-    margin-top: 6rem;
-  }
-
-  .kelly-face-img {
-    position: relative; /* Container needs relative positioning for absolute positioning of overlay */
-    width: 100%; /* Adjust width as needed */
-    max-width: 20vw; /* Adjust maximum width as needed */
-    margin-top: 5rem;
-  }
-  
-  .kelly-face-img img {
-    width: 100%;
-    height: auto;
-  }
-  
   .face-overlay {
     position: absolute;
     top: 0;
@@ -619,14 +589,14 @@ a {
     opacity: 0;
     transition: opacity 0.5s ease;
   }
-  
+
   .kelly-face-img:hover .face-overlay {
     opacity: 1;
   }
 
   /** About Me **/
   .fitness {
-    margin-top: 10rem;
+    margin-top: 100px;
   }
 
   /** Projects **/
@@ -635,24 +605,35 @@ a {
     width: 2300px;
   }
 
-  .slide-show>p {
+  .slide-show p {
     font-size: 15px;
     padding: 35px;
     text-align: justify;
   }
 
   /** Contact **/
-  .contact>img {
-    margin-top: 5rem;
+  .contact img {
+    margin-top: 50px;
   }
 
-  input[type=submit] {
-    margin-bottom: 15rem;
+  input[type="submit"] {
+    margin-bottom: 150px;
+  }
+
+  /** Footer **/
+  .right-brick {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .right-brick img {
+    width: 12%;
   }
 }
 
 /** Tablet Landscape **/
-@media screen and (max-width: 1366px) {
+@media (min-width: 1025px) and (max-width: 1366px) {
   .nav-bar .left-upper-corner-brick {
     position: absolute;
     top: -7rem;
@@ -660,22 +641,11 @@ a {
     width: 35%;
   }
 
-  .kelly-graffiti-name>img {
-    margin-top: 6rem;
-  }
-
-  .kelly-face-img {
-    position: relative; /* Container needs relative positioning for absolute positioning of overlay */
-    width: 100%; /* Adjust width as needed */
-    max-width: 20vw; /* Adjust maximum width as needed */
-    margin-top: 5rem;
-  }
-  
   .kelly-face-img img {
     width: 100%;
     height: auto;
   }
-  
+
   .face-overlay {
     position: absolute;
     top: 0;
@@ -684,13 +654,9 @@ a {
     opacity: 0;
     transition: opacity 0.5s ease;
   }
-  
-  .kelly-face-img:hover .face-overlay {
-    opacity: 1;
-  }
- 
-   /** Projects **/
-   .carousel-container {
+
+  /** Projects **/
+  .carousel-container {
     scroll-snap-type: x mandatory;
     width: 3500px;
   }
@@ -698,37 +664,43 @@ a {
 
 /**Tablet Pro Portrait**/
 @media screen and (max-width: 1024px) {
+  /** Hero **/
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   /** Nav **/
   .nav-bar {
     justify-content: space-between;
+    padding: 24px;
   }
 
-  .nav-bar .left-upper-corner-brick {
-    top: -10rem;
-    width: 60%;
-  }
-
-  .nav-bar>img {
-    width: 12%;
-  }
-
-  .overlay-house-icon>a>img {
-    width: 7%;
-    margin-top: -2.5rem;
-    margin-left: 1rem;
+  .nav-bar img {
+    width: 15%;
   }
 
   .nav-items {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 60px;
   }
 
-  .nav-items>a {
+  .nav-items a {
+    text-align: center;
     font-size: 40px;
-    margin-top: 5rem;
+    margin-top: 50px;
+  }
+
+  .nav-items .resume {
+    color: #000;
+    background-color: gold;
+    text-align: center;
+    padding: 10px;
+    width: 18%;
+    border-radius: 5px;
   }
 
   /** Menu **/
@@ -738,8 +710,8 @@ a {
   }
 
   .bar {
-    width: 40px;
-    height: 3px;
+    width: 64px;
+    height: 6px;
     background-color: #ffffff;
     margin: 6px 0;
   }
@@ -775,7 +747,7 @@ a {
     margin-top: -1rem;
   }
 
-  .sub-nav-content>a {
+  .sub-nav-content a {
     margin-top: 2rem;
     text-align: center;
     font-size: 25px;
@@ -787,33 +759,27 @@ a {
     margin-top: 5rem;
   }
 
-  .dropbtn>i {
+  .dropbtn i {
     display: none;
   }
 
-  .dropdown .dropdown-content>a {
+  .dropdown .dropdown-content a {
     display: none;
   }
 
   /** Hero **/
   .hero {
+    margin-top: 150px;
+  }
+
+  .left-content-container {
+    width: 100%;
+  }
+
+  .kelly-graffiti-name {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-content: center;
-    margin-top: 20rem;
-  }
-
-  .kelly-graffiti-name .hero-brick {
-    width: 100%;
-    position: absolute;
-    margin-top: 15rem;
-  }
-
-  .kelly-graffiti-name>img {
-    position: relative;
-    width: 100%;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
   }
 
   @keyframes turn-icon-animation {
@@ -827,45 +793,49 @@ a {
       transform: scale(1);
     }
   }
-  
-  .kelly-graffiti-name>img{
+
+  .kelly-graffiti-name > img {
     animation: 0.6s ease-in-out turn-icon-animation;
     animation-delay: 1.5s;
   }
 
-  .intro {
-    display: flex;
-    flex-direction: column;
-  }
-
   h1 {
     font-size: 65px;
-    text-align: center;
   }
 
   @keyframes slidein {
     from {
       transform: translateX(-100%);
     }
-  
+
     to {
       transform: translateX(0%);
     }
   }
-  
-  h1{
-    animation: 1s ease-in slidein;
-  }
 
-  .kelly-graffiti-name h2 {
-    animation: typing 2s steps(51, end), blink-caret 12s step-end infinite alternate;
-    overflow: hidden;
-    width: 23ch;
-    white-space: pre-wrap;
+  .job-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 50px;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+      color: #0000ff;
+    }
+  }
+
+  .job-description h2 {
+    animation: typing 1.5s steps(51, end),
+      blink-caret 12s step-end infinite alternate;
+    overflow: hidden;
+    width: 46ch;
+    white-space: wrap;
   }
 
   .kelly-face-img {
@@ -878,9 +848,9 @@ a {
     justify-content: flex-end;
   }
 
-  .side-right-brick>img {
+  .side-right-brick img {
     width: 30%;
-    margin-bottom: -10rem;
+    margin-bottom: -100px;
   }
 
   /** About Me **/
@@ -892,7 +862,7 @@ a {
     margin-top: 0rem;
   }
 
-  .about-me-title>img {
+  .about-me-title img {
     width: 85%;
   }
 
@@ -905,7 +875,7 @@ a {
     margin: 0;
   }
 
-  .projects>img {
+  .projects > img {
     margin-top: 20rem;
     margin-bottom: 10rem;
     width: 60%;
@@ -951,14 +921,14 @@ a {
     justify-content: flex-start;
   }
 
-  .slide-show>h4 {
+  .slide-show > h4 {
     font-size: 35px;
     margin: 0;
     margin-bottom: 5rem;
     text-align: center;
   }
 
-  .slide-show>p {
+  .slide-show > p {
     font-size: 20px;
   }
 
@@ -966,11 +936,11 @@ a {
     font-size: 20px;
   }
 
-  .left-arrow>img {
+  .left-arrow > img {
     display: none;
   }
 
-  .right-arrow>img {
+  .right-arrow > img {
     display: none;
   }
 
@@ -978,7 +948,7 @@ a {
     display: flex;
   }
 
-  .side-left-brick>img {
+  .side-left-brick > img {
     margin-top: -15rem;
     margin-bottom: -10rem;
     width: 30%;
@@ -989,7 +959,7 @@ a {
     margin: 0;
   }
 
-  .contact>img {
+  .contact > img {
     width: 60%;
     margin-top: 15rem;
     margin-bottom: 10rem;
@@ -999,118 +969,25 @@ a {
     padding: 30px 30px 30px 30px;
   }
 
-  input[type=message] {
+  input[type="message"] {
     padding: 30px 30px 200px 30px;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     padding: 30px 30px 30px 30px;
     margin-bottom: 15rem;
   }
 
   /** Footer **/
-  .right-brick>img {
+  .right-brick > img {
     width: 25%;
   }
 }
 
 /** Tablet Ipad Air Portrait **/
 @media screen and (max-width: 844px) {
-
-  /* Nav */
-  .nav-bar .left-upper-corner-brick {
-    top: -10rem;
-    left: -25rem;
-    width: 65%;
-  }
-
-  .overlay-house-icon>a>img {
-    width: 7%;
-    margin-top: -2rem;
-    margin-left: 0.3rem;
-  }
-
-   /* Menu */
-  .sub-nav-content>a {
-    font-size: 25px;
-  }
-
-   /* Hero */
-  .hero {
-    margin-top: 7rem;
-  }
-
-  .kelly-graffiti-name .hero-brick {
-    margin-top: 8rem;
-  }
-
-  .kelly-graffiti-name>img {
-    margin-top: 6rem;
-    margin-bottom: 3rem;
-  }
-
-  @keyframes turn-icon-animation {
-    0% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(1.4);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .kelly-graffiti-name>img{
-    animation: 0.6s ease-in-out turn-icon-animation;
-    animation-delay: 1.5s;
-  }
-
-  h1 {
-    font-size: 45px;
-    margin-left: 4rem;
-  }
-
-  @keyframes slidein {
-    from {
-      transform: translateX(-100%);
-    }
-  
-    to {
-      transform: translateX(0%);
-    }
-  }
-  
-  h1{
-    animation: 1s ease-in slidein;
-  }
-
-  .kelly-graffiti-name h2 {
-    animation: typing 0;
-    overflow: hidden;
-    width: 23ch;
-    white-space: pre-wrap;
-  }
-
-  h2 {
-    font-size: 45px;
-  }
-
-  /* About Me */
-  .fitness {
-    margin-top: 10rem;
-  }
-
-  .about-me>p {
-    font-size: 20px;
-  }
-
-  .blog {
-    font-size: 20px;
-  }
-
   /* Projects */
-  .projects>img {
+  .projects > img {
     margin-top: 20rem;
   }
   .nav-items .desktop-projects {
@@ -1291,73 +1168,31 @@ a {
     border: none;
   }
 
-  .card-lg-content>a {
+  .card-lg-content > a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
   }
-
-  /* Contact */
-  .contact {
-    padding: 0;
-    margin-top: 18rem;
-  }
-
-  .contact>img {
-    width: 70%;
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-  }
-
-  input {
-    width: 35rem;
-  }
-
-  input[type=submit] {
-    margin-bottom: 15rem;
-  }
-
-  /* Footer */
-  .right-brick>img {
-    display: flex;
-    margin-top: -20rem;
-    margin-bottom: 2rem;
-    width: 20%;
-  }
-
-  .social-media-icons>a>img {
-    width: 25px;
-  }
 }
 
 /**Mobile Portrait**/
 @media screen and (max-width: 480px) {
+  .left-content-container {
+    width: 100%;
+  }
 
   /* nav */
-  .nav-bar .left-upper-corner-brick {
-    top: -5rem;
-    left: -15rem;
-    width: 85%;
-  }
-
-  .overlay-house-icon>a>img {
-    width: 12%;
-    margin-top: -2rem;
-    margin-left: -1.5rem;
-  }
-
-  .nav-bar>img {
-    margin-left: -1rem;
-    margin-top: 1rem;
-    width: 17%;
+  .nav-bar img {
+    margin-top: 5px;
+    width: 20%;
   }
 
   .closebtn {
     font-size: 40px;
   }
 
-  .nav-items>a {
+  .nav-items a {
     font-size: 30px;
   }
 
@@ -1365,24 +1200,30 @@ a {
     margin-top: -1rem;
   }
 
-  .sub-nav-content>a {
+  .sub-nav-content > a {
     font-size: 20px;
+  }
+
+  .bar {
+    width: 60px;
+    height: 6px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+
+  .nav-items .resume {
+    width: 34%;
   }
 
   /* hero */
   .hero {
     display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
+    flex-direction: column;
   }
 
-  .kelly-graffiti-name .hero-brick {
-    margin-top: 5rem;
-  }
-
-  .kelly-graffiti-name>img {
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+  .intro {
+    display: flex;
+    flex-direction: column;
   }
 
   @keyframes turn-icon-animation {
@@ -1396,35 +1237,32 @@ a {
       transform: scale(1);
     }
   }
-  
-  .kelly-graffiti-name>img{
+
+  .kelly-graffiti-name > img {
     animation: 0.6s ease-in-out turn-icon-animation;
     animation-delay: 1.5s;
   }
 
+  @keyframes slidein {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
   h1 {
     font-size: 25px;
+    text-align: center;
     text-indent: 0;
-    margin-left: 4rem;
-    margin-top: -1rem;
+    animation: 1s ease-in slidein;
   }
 
-  @keyframes slidein {
-  from {
-    transform: translateX(-100%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
-}
-
-h1{
-  animation: 1s ease-in slidein;
-}
-  
-  .kelly-graffiti-name h2 {
-    animation: typing 2s steps(51, end), blink-caret 12s step-end infinite alternate;
+  .job-description h2 {
+    animation: typing 2s steps(51, end),
+      blink-caret 12s step-end infinite alternate;
     overflow: hidden;
     white-space: wrap;
   }
@@ -1439,7 +1277,7 @@ h1{
     justify-content: flex-end;
   }
 
-  .side-right-brick>img {
+  .side-right-brick > img {
     width: 40%;
     margin-top: 2rem;
   }
@@ -1449,7 +1287,7 @@ h1{
     padding: 3rem;
   }
 
-  .about-me-title>img {
+  .about-me-title > img {
     width: 100%;
   }
 
@@ -1457,7 +1295,7 @@ h1{
     font-size: 20px;
   }
 
-  .about-me>p {
+  .about-me > p {
     font-size: 20px;
   }
 
@@ -1465,7 +1303,7 @@ h1{
     margin-top: 10rem;
   }
 
-  .side-left-brick>img {
+  .side-left-brick > img {
     margin-top: -3rem;
     width: 45%;
   }
@@ -1475,7 +1313,7 @@ h1{
     margin-top: 2rem;
   }
 
-  .projects>img {
+  .projects > img {
     width: 70%;
     margin-top: 10rem;
     margin-bottom: 5rem;
@@ -1660,7 +1498,7 @@ h1{
     border: none;
   }
 
-  .card-lg-content>a {
+  .card-lg-content > a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1673,7 +1511,7 @@ h1{
     margin: 0;
   }
 
-  .contact>img {
+  .contact > img {
     width: 70%;
     margin-top: 12rem;
     margin-bottom: 5rem;
@@ -1683,19 +1521,19 @@ h1{
     width: 35rem;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     margin-bottom: 15rem;
   }
 
   /* footer */
-  .right-brick>img {
+  .right-brick > img {
     display: flex;
     margin-top: -12rem;
     margin-bottom: 2rem;
     width: 20%;
   }
 
-  .social-media-icons>a>img {
+  .social-media-icons > a > img {
     width: 25px;
   }
 }

@@ -660,7 +660,7 @@ footer {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   h2 {
@@ -674,7 +674,7 @@ footer {
     animation: typing 1.5s steps(51, end),
       blink-caret 12s step-end infinite alternate;
     overflow: hidden;
-    width: 46ch;
+    width: 43ch;
     white-space: wrap;
   }
 
@@ -696,7 +696,7 @@ footer {
   /** Projects **/
   .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 1800px;
+    width: 2800px;
   }
 }
 

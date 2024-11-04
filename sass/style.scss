@@ -656,7 +656,7 @@ footer {
   }
 
   .nav-bar img {
-    width: 15%;//13%
+    width: 5%;//13%
   }
 
   h1 {
@@ -664,10 +664,10 @@ footer {
   }
 
   h2 {
-    font-size: 25px;//30
+    font-size: 25px;//30px
     font-weight: bold;
     text-align: center;
-    padding: 35;//40
+    padding: 45;//40px
   }
 
   .job-description h2 {
@@ -675,7 +675,7 @@ footer {
       blink-caret 12s step-end infinite alternate;
     overflow: hidden;
     width: 46ch;
-    white-space: nowrap;//1800
+    white-space: nowrap;//wrap
   }
 
   .kelly-face-img img {
@@ -696,7 +696,7 @@ footer {
   /** Projects **/
   .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 2800px;//1800
+    width: 2800px;//1800px
   }
 }
 

@@ -367,7 +367,7 @@ h4 {
 .slide-show {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   
 }
 
@@ -709,10 +709,10 @@ footer {
     transition: opacity 0.5s ease;
   }
 
-  /** Projects **/
+  /** Projects **/ 
   .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 2400px;//1800px
+    width: 1900px;//1800px
   }
 }
 

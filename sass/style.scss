@@ -58,6 +58,20 @@ input {
   align-items: center;
 }
 
+.left-upper-corner-brick{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+}
+
+.left-upper-corner-brick img{
+  width: 100rem;
+  margin-top: 60px;
+  margin-right: 70px;
+  
+}
+
 a {
   font-size: 30px;
   text-decoration: none;

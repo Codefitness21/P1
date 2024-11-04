@@ -632,55 +632,59 @@ footer {
   }
 }
 
-// /** Tablet Landscape **/
-// @media (min-width: 1025px) and (max-width: 1366px) {
-//   .nav-bar .left-upper-corner-brick {
-//     position: absolute;
-//     top: -7rem;
-//     left: -18rem;
-//     width: 35%;
-//   }
+/** Tablet Landscape **/
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .nav-bar .left-upper-corner-brick {
+    position: absolute;
+    top: -7rem;
+    left: -18rem;
+    width: 35%;
+  }
 
-//   .nav-bar img {
-//     width: 16%;
-//   }
+  .nav-bar img {
+    width: 17%;
+  }
 
-//   h2 {
-//     font-size: 40px;
-//     font-weight: bold;
-//     text-align: center;
-//     padding: 40px;
-//   }
+  h1 {
+    font-size: 20px;
+  }
 
-//   .job-description h2 {
-//     animation: typing 1.5s steps(51, end),
-//       blink-caret 12s step-end infinite alternate;
-//     overflow: hidden;
-//     width: 46ch;
-//     white-space: wrap;
-//   }
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+  }
 
-//   .kelly-face-img img {
-//     margin-top: 20px;
-//     width: 100%;
-//     height: auto;
-//   }
+  .job-description h2 {
+    animation: typing 1.5s steps(51, end),
+      blink-caret 12s step-end infinite alternate;
+    overflow: hidden;
+    width: 46ch;
+    white-space: wrap;
+  }
 
-//   .face-overlay {
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     height: auto;
-//     opacity: 0;
-//     transition: opacity 0.5s ease;
-//   }
+  .kelly-face-img img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
 
-//   /** Projects **/
-//   .carousel-container {
-//     scroll-snap-type: x mandatory;
-//     width: 2450px;
-//   }
-// }
+  .face-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  /** Projects **/
+  .carousel-container {
+    scroll-snap-type: x mandatory;
+    width: 2200px;
+  }
+}
 
 /**Tablet Pro Portrait**/
 @media screen and (max-width: 1024px) {

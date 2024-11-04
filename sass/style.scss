@@ -674,8 +674,8 @@ footer {
     animation: typing 1.5s steps(51, end),
       blink-caret 12s step-end infinite alternate;
     overflow: hidden;
-    width: 43ch;
-    white-space: wrap;
+    width: 46ch;
+    white-space: nowrap;
   }
 
   .kelly-face-img img {

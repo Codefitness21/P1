@@ -173,12 +173,12 @@ h1 {
   text-indent: 50px;
 }
 
-.kelly-graffiti-name {
+.kelly-graffiti-name-container {
   display: flex;
   justify-content: center;
 }
 
-.kelly-graffiti-name img {
+.kelly-graffiti-name-container img {
   width: 85%;
 }
 
@@ -242,7 +242,7 @@ h2 {
 }
 
 /*** ABOUT ME ***/
-.about-me {
+.about-me-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -446,7 +446,7 @@ text-align: center;
 }
 
 /*** CONTACT ***/
-.inquiry-page {
+.inquiry-page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -814,7 +814,7 @@ footer {
     width: 100%;
   }
 
-  .kelly-graffiti-name {
+  .kelly-graffiti-name-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -832,7 +832,7 @@ footer {
     }
   }
 
-  .kelly-graffiti-name > img {
+  .kelly-graffiti-name-container > img {
     animation: 0.6s ease-in-out turn-icon-animation;
     animation-delay: 1.5s;
   }
@@ -1276,7 +1276,7 @@ footer {
     }
   }
 
-  .kelly-graffiti-name > img {
+  .kelly-graffiti-name-container > img {
     animation: 0.6s ease-in-out turn-icon-animation;
     animation-delay: 1.5s;
   }
@@ -1322,7 +1322,7 @@ footer {
   }
 
   /* about me */
-  .about-me {
+  .about-me-container {
     padding: 3rem;
   }
 

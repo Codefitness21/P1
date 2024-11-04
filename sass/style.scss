@@ -656,6 +656,13 @@ footer {
     width: 35%;
   }
 
+  .nav-items {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .nav-bar img {
     width: 8%;
   }

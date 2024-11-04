@@ -641,6 +641,18 @@ footer {
     width: 35%;
   }
 
+  .nav-bar img {
+    width: 18%;
+  }
+
+  .job-description h2 {
+    animation: typing 1.5s steps(51, end),
+      blink-caret 12s step-end infinite alternate;
+    overflow: hidden;
+    width: 46ch;
+    white-space: nowrap;
+  }
+
   .kelly-face-img img {
     width: 100%;
     height: auto;
@@ -658,7 +670,7 @@ footer {
   /** Projects **/
   .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 2350px;
+    width: 2450px;
   }
 }
 
@@ -699,7 +711,7 @@ footer {
     background-color: gold;
     text-align: center;
     padding: 10px;
-    width: 18%;
+    width: 20%;
     border-radius: 5px;
   }
 
@@ -800,7 +812,7 @@ footer {
   }
 
   h1 {
-    font-size: 65px;
+    font-size: 50px;
   }
 
   @keyframes slidein {
@@ -1253,7 +1265,8 @@ footer {
     }
   }
 
-  h1 {
+   h1 {
+    margin-top: 30px;
     font-size: 25px;
     text-align: center;
     text-indent: 0;

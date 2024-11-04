@@ -675,7 +675,7 @@ footer {
     font-size: 25px;//30px
     font-weight: bold;
     text-align: center;
-    padding: 45;//40px
+    // padding: 45;//40px
   }
 
   .job-description h2 {
@@ -683,7 +683,7 @@ footer {
       blink-caret 12s step-end infinite alternate;
     overflow: hidden;
     width: 48ch;
-    white-space: nowrap;//wrap
+    white-space: wrap;//wrap
   }
 
   .kelly-face-img img {

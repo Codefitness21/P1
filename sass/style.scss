@@ -305,7 +305,6 @@ h2 {
 
 h4 {
   font-size: 25px;
-  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -319,7 +318,7 @@ h4 {
   align-self: center;
   scroll-snap-type: x proximity;
   scroll-behavior: smooth;
-  width: 1720px;
+  width: 2000px;
   margin-bottom: 50px;
   overflow-x: scroll;
 }
@@ -353,23 +352,24 @@ h4 {
 .slide-show {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-self: flex-start;
-  padding-left: 40px;
-  padding-right: 40px;
+  justify-content: space-evenly;
+  
 }
 
 .slide-show h1 {
   font-size: 25px;
-  margin-bottom: 50px;
   text-align: center;
   text-indent: 0;
 }
 
 .slide-show p {
-  font-size: 20px;
-  margin-bottom: 50px;
+  font-size: 15px;
   text-align: justify;
+  padding: 35px;
+}
+
+.slide-show a {
+text-align: center;
 }
 
 .cta-btn-case-study {
@@ -602,7 +602,7 @@ footer {
   /** Projects **/
   .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 2300px;
+    width: 1400px;
   }
 
   .slide-show p {
@@ -658,7 +658,7 @@ footer {
   /** Projects **/
   .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 3500px;
+    width: 2350px;
   }
 }
 

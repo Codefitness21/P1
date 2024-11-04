@@ -664,10 +664,10 @@ footer {
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 25px;//30
     font-weight: bold;
     text-align: center;
-    padding: 40px;
+    padding: 35;//40
   }
 
   .job-description h2 {
@@ -675,7 +675,7 @@ footer {
       blink-caret 12s step-end infinite alternate;
     overflow: hidden;
     width: 46ch;
-    white-space: nowrap;
+    white-space: nowrap;//1800
   }
 
   .kelly-face-img img {
@@ -696,7 +696,7 @@ footer {
   /** Projects **/
   .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 2800px;
+    width: 2800px;//1800
   }
 }
 

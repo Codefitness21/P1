@@ -663,6 +663,10 @@ footer {
     align-items: center;
   }
 
+  a {
+    width: 235px;
+  }
+
   .nav-bar img {
     width: 8%;
   }
@@ -683,7 +687,7 @@ footer {
       blink-caret 12s step-end infinite alternate;
     overflow: hidden;
     width: 48ch;
-    white-space: wrap;//wrap
+    white-space: nowrap;//wrap
   }
 
   .kelly-face-img img {

@@ -655,6 +655,10 @@ footer {
     width: 35%;
   }
 
+  .nav-bar img {
+    width: 8%;
+  }
+
   h1 {
     font-size: 25px;
   }
@@ -671,7 +675,7 @@ footer {
       blink-caret 12s step-end infinite alternate;
     overflow: hidden;
     width: 46ch;
-    white-space: nowrap;//wrap
+    white-space: wrap;//wrap
   }
 
   .kelly-face-img img {
@@ -712,7 +716,7 @@ footer {
   }
 
   .nav-bar img {
-    width: 15%;
+    width: 8%;
   }
 
   .nav-items {

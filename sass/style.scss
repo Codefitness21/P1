@@ -5,6 +5,7 @@
 
 html,
 body {
+  background: url(../img/Brickwall_bkgd.png);
   width: 100vw;
   height: 100vh;
   font-size: 62.5%;
@@ -40,6 +41,7 @@ input {
 }
 
 /*** NAV ***/
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -56,6 +58,20 @@ input {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.left-upper-corner-brick{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+}
+
+.left-upper-corner-brick img{
+  width: 100rem;
+  margin-top: 60px;
+  margin-right: 70px;
+  
 }
 
 a {
@@ -154,17 +170,17 @@ a {
 
 h1 {
   margin-top: 130px;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   text-indent: 50px;
 }
 
-.kelly-graffiti-name {
+.kelly-graffiti-name-container {
   display: flex;
   justify-content: center;
 }
 
-.kelly-graffiti-name img {
+.kelly-graffiti-name-container img {
   width: 85%;
 }
 
@@ -228,7 +244,7 @@ h2 {
 }
 
 /*** ABOUT ME ***/
-.about-me {
+.about-me-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -305,7 +321,6 @@ h2 {
 
 h4 {
   font-size: 25px;
-  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -319,7 +334,7 @@ h4 {
   align-self: center;
   scroll-snap-type: x proximity;
   scroll-behavior: smooth;
-  width: 1720px;
+  width: 2000px;
   margin-bottom: 50px;
   overflow-x: scroll;
 }
@@ -353,23 +368,24 @@ h4 {
 .slide-show {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-self: flex-start;
-  padding-left: 40px;
-  padding-right: 40px;
+  justify-content: flex-start;
+  
 }
 
 .slide-show h1 {
   font-size: 25px;
-  margin-bottom: 50px;
   text-align: center;
   text-indent: 0;
 }
 
 .slide-show p {
-  font-size: 20px;
-  margin-bottom: 50px;
+  font-size: 15px;
   text-align: justify;
+  padding: 35px;
+}
+
+.slide-show a {
+text-align: center;
 }
 
 .cta-btn-case-study {
@@ -432,7 +448,7 @@ h4 {
 }
 
 /*** CONTACT ***/
-.inquiry-page {
+.inquiry-page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -602,7 +618,7 @@ footer {
   /** Projects **/
   .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 2300px;
+    width: 1400px;
   }
 
   .slide-show p {
@@ -641,7 +657,46 @@ footer {
     width: 35%;
   }
 
+  .nav-items {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a {
+    width: 235px;
+  }
+
+  .nav-items .resume {
+    width: 16%;
+  }
+
+  .nav-bar img {
+    width: 8%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 25px;//30px
+    font-weight: bold;
+    text-align: center;
+    // padding: 45;//40px
+  }
+
+  .job-description h2 {
+    animation: typing 1.5s steps(51, end),
+      blink-caret 12s step-end infinite alternate;
+    overflow: hidden;
+    width: 48ch;
+    white-space: nowrap;//wrap
+  }
+
   .kelly-face-img img {
+    margin-top: 50px;
     width: 100%;
     height: auto;
   }
@@ -655,10 +710,10 @@ footer {
     transition: opacity 0.5s ease;
   }
 
-  /** Projects **/
+  /** Projects **/ 
   .carousel-container {
     scroll-snap-type: x mandatory;
-    width: 3500px;
+    width: 2450px;//1800px
   }
 }
 
@@ -678,7 +733,7 @@ footer {
   }
 
   .nav-bar img {
-    width: 15%;
+    width: 12%;
   }
 
   .nav-items {
@@ -699,7 +754,7 @@ footer {
     background-color: gold;
     text-align: center;
     padding: 10px;
-    width: 18%;
+    width: 20%;
     border-radius: 5px;
   }
 
@@ -776,7 +831,7 @@ footer {
     width: 100%;
   }
 
-  .kelly-graffiti-name {
+  .kelly-graffiti-name-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -794,13 +849,13 @@ footer {
     }
   }
 
-  .kelly-graffiti-name > img {
+  .kelly-graffiti-name-container > img {
     animation: 0.6s ease-in-out turn-icon-animation;
     animation-delay: 1.5s;
   }
 
   h1 {
-    font-size: 65px;
+    font-size: 50px;
   }
 
   @keyframes slidein {
@@ -1238,7 +1293,7 @@ footer {
     }
   }
 
-  .kelly-graffiti-name > img {
+  .kelly-graffiti-name-container > img {
     animation: 0.6s ease-in-out turn-icon-animation;
     animation-delay: 1.5s;
   }
@@ -1253,7 +1308,8 @@ footer {
     }
   }
 
-  h1 {
+   h1 {
+    margin-top: 30px;
     font-size: 25px;
     text-align: center;
     text-indent: 0;
@@ -1268,7 +1324,7 @@ footer {
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .side-right-brick {
@@ -1283,7 +1339,7 @@ footer {
   }
 
   /* about me */
-  .about-me {
+  .about-me-container {
     padding: 3rem;
   }
 

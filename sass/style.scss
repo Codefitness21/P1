@@ -836,13 +836,44 @@ footer {
     margin-top: 150px;
   }
 
+  .tablet-view {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 42%;
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+
+  .job-notification-indicator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+
+  .indicator-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px 10px;
+  }
+
+  h6 {
+    font-size: 15px;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+  }
+
   h1 {
-    margin-top: 30px;
+    margin-top: 0;//30px
     font-size: 50px;
   }
 
   .intro {
-    margin-top: 70px;
+    margin-top: 0px;//70px
   }
 
   .left-content-container {
@@ -854,29 +885,6 @@ footer {
 
   .right-content-container {
     display: none;
-  }
-
-  .tablet-view {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    width: 42%;
-    margin-top: 50px;
-    margin-bottom: 0px;
-  }
-
-  .job-notification-indicator {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #ffffff;
-  }
- 
-  h6 {
-    font-size: 15px;
-    color: #000000;
-    padding: 10px;
-    text-align: center;
   }
 
   .kelly-graffiti-name-container {
@@ -1331,8 +1339,8 @@ footer {
 
   .indicator-light {
     padding: 10px 16px;
-        border-radius: 50%;
-        margin-bottom: 0;
+    border-radius: 50%;
+    margin-bottom: 0;
   }
 
   h6 {

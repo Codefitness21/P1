@@ -800,10 +800,6 @@ footer {
   font-size: 30px;
 }
 
-.sub-nav-content {
-  margin-top: -1rem;
-}
-
 .sub-nav-content > a {
   font-size: 20px;
 }
@@ -818,7 +814,6 @@ footer {
 .nav-items .resume {
   width: 36%;
 }
-
 
   /* menu */
   .closebtn {
@@ -878,6 +873,10 @@ footer {
 
   h2 {
     font-size: 50px;
+  }
+
+  h5 {
+    text-align: center;
   }
 
   p {

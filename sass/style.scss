@@ -125,7 +125,7 @@ a {
 }
 
 /*** HERO ***/
-.hero-container {
+.hero {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -199,8 +199,8 @@ h2 {
   background-size: contain;
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 30px;
   width: 20%;
+  margin-top: 30px;
 }
 
 .job-notification-indicator {
@@ -229,6 +229,9 @@ h5 {
   display: none;
 }
 
+.kelly-face-img img{
+  width: 100%;
+}
 
 // .face-overlay {
 //   position: absolute;
@@ -1240,6 +1243,10 @@ footer {
     width: 100%;
   }
 
+  .right-content-container{
+    width: 0%;
+  }
+
   /* nav */
   .nav-bar img {
     margin-top: 5px;
@@ -1269,16 +1276,6 @@ footer {
     margin: 6px 0;
   }
 
-  .nav-bar .left-upper-corner-brick img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -50px;
-    left: -1px;
-    width: 10%;
-  }
-
   .nav-items .resume {
     width: 36%;
   }
@@ -1292,6 +1289,7 @@ footer {
   .intro {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
   }
 
   @keyframes turn-icon-animation {

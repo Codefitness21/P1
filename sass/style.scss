@@ -216,13 +216,13 @@ h2 {
   padding: 8px 8px;
   border-radius: 50%;
   background-color: #7fff00;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 h5 {
   color: #ffffff;
   font-size: 13px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .tablet-view {
@@ -1283,6 +1283,10 @@ footer {
   .intro {
     display: flex;
     flex-direction: column;
+  }
+
+  h1 {
+    margin-top: 20px;
   }
 
   @keyframes turn-icon-animation {

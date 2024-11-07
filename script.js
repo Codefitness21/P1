@@ -57,4 +57,18 @@ function goRight() {
                 let blink = document.getElementById('blink');
                 setInterval(function () {
                     blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
-                }, 1000);
+                }, 900);
+
+                // function doBlink() {
+                //     // Blink, Blink, Blink...
+                //     var blink = document.all.tags("blink")
+                //     for (var i=0; i < blink.length; i++)
+                //       blink[i].style.visibility = blink[i].style.visibility == "" ? "hidden" : "" 
+                //   }
+                  
+                //   function startBlink() {
+                  
+                //     if (document.all)
+                //       setInterval("doBlink()",500)
+                //   }
+                //   window.onload = startBlink;

@@ -676,11 +676,11 @@ footer {
   }
 
   .right-content-container {
-    margin-top: 30px;
+    margin-top: 200px;
   }
 
   h1 {
-    margin-top: 130px;//0
+    margin-top: 200px;//0
     font-size: 25px;
   }
 
@@ -843,6 +843,7 @@ footer {
   .job-notification-indicator {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background-color: #ffffff;
   }
 
@@ -1314,15 +1315,15 @@ footer {
     flex-direction: column;
   }
 
-  // .tablet-view {
-  //   display: flex;
-  //   flex-direction: row;
-  //   align-self: center;
-  //   width: 42%;
+  .tablet-view {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    // width: 42%;
 
-  //   margin-top: 50px;
-  //   padding: 25px;
-  // }
+    // margin-top: 50px;
+    // padding: 25px;
+  }
 
   // .job-notification-indicator {
   //   display: flex;

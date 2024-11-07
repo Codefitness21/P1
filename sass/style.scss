@@ -1275,9 +1275,9 @@ footer {
 
 /**Mobile Portrait**/
 @media screen and (max-width: 480px) {
-  .left-content-container {
-    width: 100%;
-  }
+  // .left-content-container {
+  //   width: 100%;
+  // }
 
   .right-content-container {
     display: none;
@@ -1413,7 +1413,6 @@ footer {
 
   .indicator-light {
     margin-right: 15px;
-    padding: 8px 8px;
   }
 
   .side-right-brick > img {

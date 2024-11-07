@@ -691,6 +691,10 @@ footer {
     // padding: 45;//40px
   }
 
+  .indicator-light {
+    padding: 0;
+  }
+
   .job-description h2 {
     animation: typing 1.5s steps(51, end),
       blink-caret 12s step-end infinite alternate;

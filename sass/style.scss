@@ -676,8 +676,7 @@ footer {
   }
 
   .right-content-container {
-    width: 20%;
-    background-color: #000000;
+    margin-top: 30px;
   }
 
   h1 {
@@ -690,10 +689,6 @@ footer {
     font-weight: bold;
     text-align: center;
     // padding: 45;//40px
-  }
-
-  .indicator-light {
-    padding: 0;
   }
 
   .job-description h2 {
@@ -1402,7 +1397,6 @@ footer {
 
   .job-notification-indicator {
     margin-top: 0;
-    padding: 0;
   }
 
   .indicator-light {

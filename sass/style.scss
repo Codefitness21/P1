@@ -604,18 +604,22 @@ footer {
     font-size: 55px;
   }
 
-  .face-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: auto;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+  .right-content-container {
+    background-color: #000000;
   }
 
-  .kelly-face-img:hover .face-overlay {
-    opacity: 1;
-  }
+  // .face-overlay {
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   height: auto;
+  //   opacity: 0;
+  //   transition: opacity 0.5s ease;
+  // }
+
+  // .kelly-face-img:hover .face-overlay {
+  //   opacity: 1;
+  // }
 
   /** About Me **/
   .fitness {

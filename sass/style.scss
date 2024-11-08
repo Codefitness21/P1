@@ -220,10 +220,25 @@ h2 {
   border: 1px solid #000000;
 }
 
+#blink {
+  animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+      visibility: hidden;
+  }
+}
+
+
 h6 {
   color: #ffffff;
   font-size: 15px;
   margin-bottom: 25px;
+}
+
+#blink {
+  opacity: 1;
 }
 
 .tablet-view {

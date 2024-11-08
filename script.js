@@ -52,23 +52,10 @@ function goRight() {
                 }
                 this.classList.add("active");
             }*/
-
-
-                let blink = document.getElementById('blink');
-                setInterval(function () {
-                    blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
-                }, 900);
-
-                // function doBlink() {
-                //     // Blink, Blink, Blink...
-                //     var blink = document.all.tags("blink")
-                //     for (var i=0; i < blink.length; i++)
-                //       blink[i].style.visibility = blink[i].style.visibility == "" ? "hidden" : "" 
-                //   }
-                  
-                //   function startBlink() {
-                  
-                //     if (document.all)
-                //       setInterval("doBlink()",500)
-                //   }
-                //   window.onload = startBlink;
+//Blinker
+                // let blink = document.getElementById('blink');
+                // console.log('Blink element:', blink);
+                // setInterval(function () {
+                //     blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+                // }, 900);
+             

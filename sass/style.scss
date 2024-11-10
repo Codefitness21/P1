@@ -201,7 +201,7 @@ h2 {
 .right-content-container {
   background: url(../img/Kelly_Face_Img.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   flex-direction: column-reverse;
   width: 20%;
@@ -212,12 +212,10 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom: 0px;
-  background-color: #000000;
-  padding: 15px 15px 15px 15px;
+  margin-bottom: 30px;
 }
 
-.indicator-light{
+.indicator-light {
   padding: 8px 8px;
   border-radius: 50%;
   background-color: #7fff00;
@@ -231,15 +229,15 @@ h2 {
 
 @keyframes blink-animation {
   to {
-      visibility: hidden;
+    visibility: hidden;
   }
 }
-
 
 h6 {
   color: #ffffff;
   font-size: 15px;
   margin-bottom: 25px;
+  margin-right: 40px;
 }
 
 #blink {
@@ -628,6 +626,20 @@ footer {
     background-color: #000000;
   }
 
+  .job-notification-indicator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+  }
+  
+  h6 {
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-right: 60px;
+  }
+
   // .face-overlay {
   //   position: absolute;
   //   top: 0;
@@ -705,7 +717,7 @@ footer {
   }
 
   .indicator-light {
-    padding: 8px 8px;//8px 8px
+    padding: 8px 8px; //8px 8px
     border-radius: 50%;
     background-color: #7fff00;
     margin-bottom: 25px;
@@ -1127,6 +1139,30 @@ footer {
   }
   .nav-items .desktop-projects {
     display: none;
+  }
+
+  .nav-bar img {
+    width: 16%;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bar {
+    width: 52px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
   }
 
   .nav-items .mobile-projects {

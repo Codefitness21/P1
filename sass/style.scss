@@ -117,6 +117,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border-bottom: 70px solid #000000;
 }
 
 .left-content-container {
@@ -772,6 +773,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-bottom: none;
   }
 
   /** Nav **/

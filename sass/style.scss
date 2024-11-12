@@ -184,7 +184,7 @@ h1 {
     blink-caret 12s step-end infinite alternate;
   overflow: hidden;
   width: 53ch;
-  white-space: wrap;
+  white-space: nowrap;
 }
 
 .animate {

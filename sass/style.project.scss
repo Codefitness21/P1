@@ -324,22 +324,43 @@ p {
 }
 
 /*** FOOTER ***/
-footer {
+.footer-info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   background-color: $primary-color;
-  padding: 2rem;
+  padding: 20px;
 }
 
-.social-media-icons a {
+// footer {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   background-color: $primary-color;
+//   padding: 20px;
+// }
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.social-media-icons a img {
+  width: 40px;
+}
+
+.copyright {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.social-media-icons > a > img {
-  width: 40px;
+.footer-info h6 {
+  color: #ffffff;
+  font-size: 12px;
 }
 
 .right-brick {

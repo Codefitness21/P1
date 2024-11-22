@@ -573,12 +573,12 @@ input[type="submit"] {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0px;
 }
 
 .footer-info h6 {
   color: #ffffff;
   font-size: 12px;
+  margin: 0px;
 }
 
 /** MEDIA QUERIES **/
@@ -712,6 +712,12 @@ input[type="submit"] {
   .right-brick img {
     width: 12%;
   }
+
+  .footer-info h6 {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0px;
+  }
 }
 
 /** Tablet Landscape **/
@@ -772,19 +778,25 @@ input[type="submit"] {
     height: auto;
   }
 
-  .face-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: auto;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
+  // .face-overlay {
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   height: auto;
+  //   opacity: 0;
+  //   transition: opacity 0.5s ease;
+  // }
 
   /** Projects **/
   .carousel-container {
     scroll-snap-type: x mandatory;
     width: 2450px; //1800px
+  }
+
+  .footer-info h6 {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0px;
   }
 }
 
@@ -1153,6 +1165,12 @@ input[type="submit"] {
   .right-brick > img {
     width: 25%;
   }
+
+  .footer-info h6 {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0px;
+  }
 }
 
 /** Tablet Ipad Air Portrait **/
@@ -1350,6 +1368,12 @@ input[type="submit"] {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+  }
+
+  .footer-info h6 {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0px;
   }
 }
 
@@ -1731,8 +1755,10 @@ input[type="submit"] {
   }
 
   /* footer */
-  .copyright {
-    margin: 0;
+  .footer-info h6 {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0px;
   }
 
   .right-brick > img {

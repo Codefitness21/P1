@@ -537,7 +537,7 @@ input[type="submit"] {
 }
 
 .right-brick img {
-  margin-top: -300px;
+  margin-top: -30rem;
   width: 20%;
 }
 
@@ -573,6 +573,7 @@ input[type="submit"] {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0px;
 }
 
 .footer-info h6 {
@@ -1731,10 +1732,9 @@ input[type="submit"] {
 
   /* footer */
   .right-brick > img {
-    display: flex;
-    margin-top: -12rem;
-    margin-bottom: 2rem;
-    width: 20%;
+    margin-top: -16rem;
+    height: 15vh;
+    width: 25%;
   }
 
   .social-media-icons > a > img {
